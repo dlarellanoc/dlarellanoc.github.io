@@ -433,6 +433,8 @@
           <option value="sueldo">💼 Sueldo</option>
           <option value="otro">📦 Otro</option>
           <option value="credito">💳 Crédito</option>
+          <option value="tc_infinite">💳 TC Infinite</option>
+          <option value="mes_anterior">📅 Mes anterior</option>
           <option value="cae">🎓 CAE</option>
           <option value="marce_dpto">🏠 Marce Dpto</option>
         </select>
@@ -523,19 +525,21 @@ let tokenClient = null;
 
 // ── DATA ──────────────────────────────────────────────────────────
 const CATS = {
-  alimentacion:   { label: 'Alimentación',    color: '#f06090' },
-  transporte:     { label: 'Transporte',      color: '#60b4f0' },
-  vivienda:       { label: 'Vivienda',        color: '#f0c060' },
-  salud:          { label: 'Salud',           color: '#60f09a' },
+  alimentacion:   { label: 'Alimentación', color: '#f06090' },
+  transporte:     { label: 'Transporte', color: '#60b4f0' },
+  vivienda:       { label: 'Vivienda', color: '#f0c060' },
+  salud:          { label: 'Salud', color: '#60f09a' },
   entretenimiento:{ label: 'Entretenimiento', color: '#c060f0' },
-  educacion:      { label: 'Educación',       color: '#60f0d0' },
-  ropa:           { label: 'Ropa',            color: '#f09060' },
-  servicios:      { label: 'Servicios',       color: '#90f060' },
-  sueldo:         { label: 'Sueldo',          color: '#c8f060' },
-  otro:           { label: 'Otro',            color: '#9090a0' },
-  credito:        { label: 'Crédito',         color: '#f0a060' },
-  cae:            { label: 'CAE',             color: '#a060f0' },
-  marce_dpto:     { label: 'Marce Dpto',      color: '#60d4f0' },
+  educacion:      { label: 'Educación', color: '#60f0d0' },
+  ropa:           { label: 'Ropa', color: '#f09060' },
+  servicios:      { label: 'Servicios', color: '#90f060' },
+  sueldo:         { label: 'Sueldo', color: '#c8f060' },
+  otro:           { label: 'Otro', color: '#9090a0' },
+  credito:        { label: 'Crédito', color: '#f0a060' },
+  cae:            { label: 'CAE', color: '#a060f0' },
+  marce_dpto:     { label: 'Marce Dpto', color: '#60d4f0' },
+  tc_infinite:    { label: 'TC Infinite', color: '#ff6b35' },
+  mes_anterior:   { label: 'Mes anterior', color: '#4caf50' },
 };
 
 let txType = 'expense';
